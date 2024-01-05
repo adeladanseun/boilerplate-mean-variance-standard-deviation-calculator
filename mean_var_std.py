@@ -11,7 +11,7 @@ def calculate(list):
         flatStd = a.std()
         flatSum = a.sum()
     a=a.reshape((3,3))
-    calculations = {'min':[], 'max':[], 'var':[], 'std':[], 'sum':[]}
+    calculations = {'min':[], 'max':[], 'variance':[], 'standard deviation':[], 'sum':[]}
     for i in range(2):
         newMin=[]
         newMax=[]
@@ -30,12 +30,12 @@ def calculate(list):
             sum.append(row.sum())
         calculations['min'].append(newMin)
         calculations['max'].append(newMax)
-        calculations['var'].append(var)
-        calculations['std'].append(std)
+        calculations['variance'].append(var)
+        calculations['standard deviation'].append(std)
         calculations['sum'].append(sum)
     calculations['sum'].append(flatSum)
-    calculations['std'].append(flatStd)
-    calculations['var'].append(flatVar)
+    calculations['standard deviation'].append(flatStd)
+    calculations['variance'].append(flatVar)
     calculations['min'].append(flatMin)
     calculations['max'].append(flatMax)
 
