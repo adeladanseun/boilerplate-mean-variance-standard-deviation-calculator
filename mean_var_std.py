@@ -3,7 +3,7 @@ import numpy as np
 def calculate(list):
     a = np.array(list)
     if len(a)!=9:
-        raise ValueError "List must contain nine numbers.
+        raise ValueError("List must contain nine numbers.")
     else: 
         flatMin = a.min()
         flatMax = a.max()
